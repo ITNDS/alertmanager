@@ -515,11 +515,6 @@ func TestSilenceFiltering(t *testing.T) {
 			"label2!~test2",
 			true,
 		},
-		{
-			&types.Silence{Matchers: newMatcher(model.LabelSet{"label2": "test1"})},
-			"label2!~test1",
-			true,
-		},    
 	}
 
 	for _, test := range tests {
